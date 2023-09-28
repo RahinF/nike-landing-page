@@ -28,14 +28,14 @@ const Nav = () => {
             </li>
           ))}
         </ul>
-        <div className="max-lg:block hidden">
+        <button className="max-lg:block hidden">
           <Image
             src={hamburger}
             alt="hamburger"
             width={25}
             height={25}
           />
-        </div>
+        </button>
       </nav>
     </header>
   );
