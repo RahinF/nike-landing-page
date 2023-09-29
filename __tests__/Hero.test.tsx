@@ -61,7 +61,7 @@ describe('Hero', () => {
   it('renders hero big image', () => {
     render(<Hero />);
 
-    const image = screen.getByRole('img', { name: 'shoe collection' });
+    const image = screen.getByRole('img', { name: 'big shoe' });
     expect(image).toBeInTheDocument();
   });
 });
