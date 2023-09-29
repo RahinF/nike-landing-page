@@ -20,7 +20,7 @@ describe('Popular Products', () => {
   it('renders paragraph text', () => {
     render(<PopularProducts />);
     const text = screen.getByText(
-      /Experience top-notch quality and style with our sought-after selections. Discover a world of comfort, design, and value/i,
+      /Experience the perfect blend of comfort and style in our dedicated section showcasing footwear that prioritizes both, ensuring you look and feel great with every step./i,
     );
     expect(text).toBeInTheDocument();
   });
