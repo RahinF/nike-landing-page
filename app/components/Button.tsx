@@ -14,6 +14,8 @@ const Button = ({ label, iconURL, alt }: Props) => {
         src={iconURL}
         alt={alt}
         className="ml-2 rounded-full h-5 w-5"
+        height={20}
+        width={20}
       />
     </button>
   );
