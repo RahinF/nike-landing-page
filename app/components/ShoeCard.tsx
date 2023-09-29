@@ -17,7 +17,7 @@ const ShoeCard = ({ bigShoeImg, changeBigShoeImg, imgURL }: Props) => {
 
   return (
     <div
-    data-testid='shoe-container'
+      data-testid="shoe-container"
       className={clsx(
         [
           'border-2 rounded-xl cursor-pointer max-sm:flex-1 transition duration-300',
