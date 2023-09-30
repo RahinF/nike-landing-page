@@ -17,7 +17,7 @@ const SpecialOffer = () => {
         <h2 className="text-4xl font-palanquin font-bold">
           <span className="text-coral-red">Special</span> Offer
         </h2>
-        <p className="mt-4 info-text max-w-prose">
+        <p className="mt-8 info-text max-w-prose">
           Upgrade your shoe game with our special offer: Buy One, Get One 30%
           Off, mix and match your favorite pairs. Explore Seasonal Clearance for
           up to 60% off selected styles. Don&apos;t miss out!
