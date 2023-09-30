@@ -1,14 +1,26 @@
+import clsx from 'clsx';
 import Image from 'next/image';
 
 interface Props {
   label: string;
   iconURL?: string;
   alt?: string;
+  type?: 'secondary';
 }
 
-const Button = ({ label, iconURL, alt }: Props) => {
+const Button = ({ label, iconURL, alt, type }: Props) => {
   return (
-    <button className="flex justify-center items-center gap-2 px-7 py-4 border font-montserrat text-lg leading-none bg-coral-red rounded-full text-white border-coral-red">
+    <button
+      className={clsx(
+        [
+          'flex justify-center items-center gap-2 px-7 py-4 border font-montserrat text-lg leading-none rounded-full',
+        ],
+        {
+          ' bg-white text-slate-gray border-slate-gray': type === 'secondary',
+          ' bg-coral-red text-white border-coral-red': type === undefined,
+        },
+      )}
+    >
       {label}
       {iconURL && (
         <Image
