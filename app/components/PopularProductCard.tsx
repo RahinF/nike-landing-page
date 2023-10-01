@@ -8,7 +8,7 @@ interface Props {
 
 const PopularProductCard = ({ imgURL, name, price }: Props) => {
   return (
-    <div className="flex flex-1 flex-col w-full max-sm:w-full">
+    <div className="flex flex-1 flex-col w-full max-sm:w-full items-center">
       <Image
         src={imgURL}
         alt={name}
